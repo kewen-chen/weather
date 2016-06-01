@@ -2,19 +2,94 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.chenkewen.weather">
 
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="com.android.alarm.permission.SET_ALARM"/>
+
     <application
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
         android:label="@string/app_name"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".MainActivity">
+
+        <activity android:name=".activity.SplashActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+        <activity
+            android:clearTaskOnLaunch="false"
+            android:name="com.chenkewen.weather.activity.HomeActivity"
+            android:excludeFromRecents="true"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait">
+
+        </activity>
+
+
+        <activity
+            android:name="com.chenkewen.weather.activity.ChooseCityActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.chenkewen.weather.activity.AlarmInfoActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.chenkewen.weather.activity.CityManageActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.chenkewen.weather.activity.ForecastDetailsActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.chenkewen.weather.activity.SettingsActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.chenkewen.weather.activity.AQIActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.chenkewen.weather.activity.AboutInfoActivity"
+            android:screenOrientation="portrait" />
+
+        <service android:name="com.chenkewen.weather.services.NotificationService" />
+        <service android:name="com.chenkewen.weather.services.AutoUpdateService" />
+        <service android:name="com.chenkewen.weather.services.DeskWidget41Service" />
+        <service android:name="com.chenkewen.weather.services.DeskWidget42Service" />
+
+        <receiver android:name="com.chenkewen.weather.receivers.BootReceiver">
+            <intent-filter>
+                <action android:name="android.intent.action.BOOT_COMPLETED" />
+            </intent-filter>
+        </receiver>
+        <receiver android:name="com.chenkewen.weather.receivers.NetworkChangeReceiver">
+            <intent-filter>
+                <action android:name="android.net.conn.CONNECTIVITY_CHANGE" />
+            </intent-filter>
+        </receiver>
+
+        <receiver android:name="com.chenkewen.weather.receivers.WeatherWidget">
+            <intent-filter>
+                <action android:name="android.appwidget.action.APPWIDGET_UPDATE" />
+            </intent-filter>
+            <meta-data
+                android:name="android.appwidget.provider"
+                android:resource="@xml/widget_weather_41" />
+        </receiver>
+
+        <receiver android:name="com.chenkewen.weather.receivers.WeatherWidget42">
+            <intent-filter>
+                <action android:name="android.appwidget.action.APPWIDGET_UPDATE" />
+            </intent-filter>
+            <meta-data
+                android:name="android.appwidget.provider"
+                android:resource="@xml/widget_weather_42" />
+        </receiver>
+
     </application>
 
 </manifest>

@@ -1,3 +1,10 @@
 <resources>
     <string name="app_name">Weather</string>
+    <string name="add_city">添加城市</string>
+    <string name="close">关闭</string>
+    <string name="open">打开</string>
+    <string name="search_city">搜索城市</string>
+    <string name="version_change_log">一、根据github上各位大神的分享所改编的\n\n二、这还只是1.0简易版本，只有晴天，其它天气背景待添加</string>
+    <string name="use_assistant">一、使用助手\n\n1、主页面上半部下拉刷新天气\n\n2、左侧抽屉城市列表下拉刷新所有已添加城市天气\n\n二、注意\n\n1、如果通知栏出现字看不清的情况，请到APP设置中更换一下通知栏底色即可正常显示\n\n2、为了保证桌面部件和后台更新能正常工作，请将APP添加到系统或各安全软件白名单中以防后台服务被杀死\n\n三、彩蛋\n\n自定义背景,找一张图片，命名为weather，扔在SD卡根目录，然后重启APP即可~</string>
+
 </resources>
