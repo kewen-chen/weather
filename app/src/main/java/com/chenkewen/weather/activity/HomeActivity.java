@@ -59,6 +59,7 @@ import com.chenkewen.weather.utils.WeatherUtils;
 import com.chenkewen.weather.view.CircleTempView;
 import com.chenkewen.weather.view.TriangleDataDisplayView;
 import com.chenkewen.weather.view.VerticalDataDisplayView;
+import com.chenkewen.weather.view.sunshine.SceneSurfaceView;
 import com.ogaclejapan.smarttablayout.SmartTabLayout;
 
 import java.io.File;
@@ -159,6 +160,8 @@ public class HomeActivity extends BaseToolbarActivity {
      * 更新时间
      */
     private TextView tv_updateTime;
+
+    private SceneSurfaceView sceneSurfaceView;
     /**
      * 预警信息显示区域
      */
@@ -452,7 +455,7 @@ public class HomeActivity extends BaseToolbarActivity {
         // 实例化控件
         findViews();
         // 更换背景
-        checkBg();
+//       checkBg();
         sp = getSharedPreferences(getString(R.string.config), MODE_PRIVATE);
         dao = new WeatherDao(this);
         mTempIconList = new ArrayList<Integer>();
@@ -587,6 +590,7 @@ public class HomeActivity extends BaseToolbarActivity {
 
         return R.layout.sunshine_background;
     }
+
 
     /**
      * 初始化ViewPager
@@ -945,6 +949,7 @@ public class HomeActivity extends BaseToolbarActivity {
      * 实例化控件
      */
     private void findViews() {
+        sceneSurfaceView = (SceneSurfaceView) findViewById(R.id.sunshine);
         mToolbar = (Toolbar) findViewById(R.id.toolbar);
         tv_location = (TextView) findViewById(R.id.tv_location);
         iv_refresh = (ImageView) findViewById(R.id.iv_refresh);

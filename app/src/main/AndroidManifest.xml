@@ -25,7 +25,7 @@
             </intent-filter>
         </activity>
         <activity
-            android:clearTaskOnLaunch="false"
+            android:clearTaskOnLaunch="true"
             android:name="com.chenkewen.weather.activity.HomeActivity"
             android:excludeFromRecents="true"
             android:launchMode="singleTask"

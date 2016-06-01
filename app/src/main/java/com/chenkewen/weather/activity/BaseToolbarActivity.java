@@ -45,6 +45,8 @@ public abstract class BaseToolbarActivity extends AppCompatActivity {
         initToolbar();
     }
 
+
+
     public void setEnableTranslucentBar(boolean mEnableTranslucentBar) {
         this.mEnableTranslucentBar = mEnableTranslucentBar;
     }
@@ -106,7 +108,7 @@ public abstract class BaseToolbarActivity extends AppCompatActivity {
     @Override
     protected void onResume() {
         super.onResume();
-//        MobclickAgent.onResume(this);
+ //       MobclickAgent.onResume(this);
     }
 
     @Override
