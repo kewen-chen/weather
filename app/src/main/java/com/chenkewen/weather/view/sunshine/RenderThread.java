@@ -27,7 +27,7 @@ public class RenderThread extends Thread {
         this.surfaceHolder = surfaceHolder;
         scene = new Scene(context);
         //add scene/actor
-        scene.setBg(BitmapFactory.decodeResource(context.getResources(), R.mipmap.bg0_fine_day));
+        scene.setBg(BitmapFactory.decodeResource(context.getResources(), R.mipmap.bg));
         scene.add(new BirdUp(context));
         scene.add(new CloudLeft(context));
         scene.add(new CloudRight(context));

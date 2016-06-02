@@ -28,7 +28,7 @@ public class AboutInfoActivity extends BaseToolbarActivity implements View.OnCli
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        getSupportActionBar().setTitle("关于");
+        getSupportActionBar().setTitle(R.string.about);
         findViews();
         initViews();
         showData();
@@ -41,7 +41,7 @@ public class AboutInfoActivity extends BaseToolbarActivity implements View.OnCli
     }
 
     private void showData() {
-        tv_appVersion.setText("版本 " + VersionUtils.getVersionName(AboutInfoActivity.this));
+        tv_appVersion.setText(R.string.version + VersionUtils.getVersionName(AboutInfoActivity.this));
     }
 
     private void findViews() {
@@ -64,7 +64,7 @@ public class AboutInfoActivity extends BaseToolbarActivity implements View.OnCli
             case R.id.tv_sinaWeibo: {
                 ClipboardManager clipboardManager = (ClipboardManager) getSystemService(CLIPBOARD_SERVICE);
                 clipboardManager.setText(((TextView) v).getText());
-                Snackbar snackbar = Snackbar.make(tv_email, "复制成功", Snackbar.LENGTH_SHORT);
+                Snackbar snackbar = Snackbar.make(tv_email, R.string.copy_success, Snackbar.LENGTH_SHORT);
                 SnackBarUtils.customSnackBar(snackbar, getResources().getColor(R.color.home_snack_bar_background), getResources().getColor(R.color.home_snack_bar_text), 0);
                 snackbar.show();
                 break;

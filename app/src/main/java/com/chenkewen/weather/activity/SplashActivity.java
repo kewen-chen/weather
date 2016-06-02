@@ -15,71 +15,32 @@ public class SplashActivity extends Activity {
 
     private RelativeLayout rl;
 
-
-
     @Override
-
     protected void onCreate(Bundle savedInstanceState) {
-
         super.onCreate(savedInstanceState);
-
         setContentView(R.layout.welcome);
-
-
-
         rl = (RelativeLayout) findViewById(R.id.rl);
-
         AlphaAnimation alphaAnim = new AlphaAnimation(0.0f, 1.0f);
-
         alphaAnim.setDuration(2500);
-
         alphaAnim.setFillAfter(true);
-
         alphaAnim.setAnimationListener(new Animation.AnimationListener() {
 
-
-
-
-
             public void onAnimationStart(Animation animation) {
-
-
-
             }
 
-
-
             @Override
-
             public void onAnimationRepeat(Animation animation) {
-
-
-
             }
 
-
-
             @Override
-
             public void onAnimationEnd(Animation animation) {
 
-                Intent intent = new Intent(SplashActivity.this,
-
-                        HomeActivity.class);
-
+                Intent intent = new Intent(SplashActivity.this, HomeActivity.class);
                 startActivity(intent);
-
                 finish();
-
-                overridePendingTransition(R.anim.slide_in_right,
-
-                        R.anim.slide_out_left);
-
+                overridePendingTransition(R.anim.slide_in_right, R.anim.slide_out_left);
             }
-
         });
-
         rl.startAnimation(alphaAnim);
-
     }
 }

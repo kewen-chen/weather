@@ -8,7 +8,7 @@ import java.util.ArrayList;
 
 public class CityQueryDao {
 
-    private static String sDBPath = "data/data/hanjie.app.pureweather/files/location.db";
+    private static String sDBPath = "data/data/com.chenkewen.weather/files/location.db";
 
     /**
      * 获取中国所有省份的名称(包括直辖市)

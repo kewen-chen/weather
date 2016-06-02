@@ -290,10 +290,10 @@ public class ChooseCityActivity extends BaseToolbarActivity {
             public void onTextChanged(CharSequence s, int start, int before, int count) {
                 String keyWord = s.toString().trim();
                 if (!TextUtils.isEmpty(keyWord)) {
-                    tv_listState.setText("搜索结果");
+                    tv_listState.setText(R.string.search_result);
                     mSearchLocationList = CityQueryDao.searchByKeyWord(keyWord);
                 } else {
-                    tv_listState.setText("热门城市");
+                    tv_listState.setText(R.string.top_of_the_town);
                     initHotCity();
                 }
                 mSearchAdapter.notifyDataSetChanged();

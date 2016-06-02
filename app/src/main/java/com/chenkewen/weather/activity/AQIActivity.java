@@ -63,7 +63,7 @@ public class AQIActivity extends BaseToolbarActivity {
         tddv_sono.setRightValue(aqi.getNo2());
         tv_src.setText(aqi.getSrc());
         String time = aqi.getTime();
-        tv_time.setText(time + " 发布");
+        tv_time.setText(time + R.string.publish);
     }
 
     private void findViews() {

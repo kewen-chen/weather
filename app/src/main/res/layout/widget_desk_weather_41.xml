@@ -15,7 +15,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_centerInParent="true"
-            android:text="正在初始化插件"
+            android:text="@string/init_the_plug"
             android:textColor="@color/white" />
 
     </RelativeLayout>
@@ -31,7 +31,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_centerInParent="true"
-            android:text="暂未添加城市~"
+            android:text="@string/add_city_yet"
             android:textColor="@color/white" />
 
     </RelativeLayout>
@@ -47,7 +47,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_centerInParent="true"
-            android:text="暂无数据~"
+            android:text="@string/temporarily_no_data2"
             android:textColor="@color/white" />
 
     </RelativeLayout>

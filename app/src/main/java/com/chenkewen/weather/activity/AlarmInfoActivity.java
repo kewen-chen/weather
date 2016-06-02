@@ -45,7 +45,7 @@ public class AlarmInfoActivity extends BaseToolbarActivity {
         tv_alarmInfo.setText(dao.getSimpleAlarmDesc(mainAreaId));
         tv_alarmText.setText(alarm.getAlarmText());
         tv_alarmDetails.setText(alarm.getAlarm_details());
-        tv_time.setText(alarm.getTime() + " 发布");
+        tv_time.setText(alarm.getTime() + R.string.publish);
     }
 
     private void findViews() {

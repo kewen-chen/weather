@@ -14,7 +14,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_gravity="center"
-            android:text="暂无数据"
+            android:text="@string/temporarily_no_data"
             android:textColor="@color/home_text_color" />
 
         <LinearLayout
@@ -55,7 +55,7 @@
                             android:layout_height="wrap_content"
                             android:layout_centerInParent="true"
                             android:layout_gravity="center"
-                            android:text="无空气质量信息"
+                            android:text="@string/no_air_quality_information"
                             android:textColor="@color/home_text_color" />
 
                         <View
@@ -79,11 +79,11 @@
                     android:layout_weight="1"
                     app:pure_icon="@mipmap/ic_fengli_white"
                     app:pure_leftLine="true"
-                    app:pure_leftTitle="风向"
+                    app:pure_leftTitle="@string/wind_direction"
                     app:pure_leftTitleTextColor="@color/home_text_color_dark"
                     app:pure_leftValueTextColor="@color/home_text_color"
                     app:pure_lineColor="@color/home_divider_color"
-                    app:pure_rightTitle="风力"
+                    app:pure_rightTitle="string/wind_power"
                     app:pure_rightTitleTextColor="@color/home_text_color_dark"
                     app:pure_rightValueTextColor="@color/home_text_color" />
 
@@ -103,7 +103,7 @@
                     app:pure_icon="@mipmap/ic_shidu_white"
                     app:pure_lineColor="@color/home_divider_color"
                     app:pure_rightLine="true"
-                    app:pure_title="湿度"
+                    app:pure_title="@string/humidity"
                     app:pure_titleTextColor="@color/home_text_color_dark"
                     app:pure_valueTextColor="@color/home_text_color" />
 
@@ -115,11 +115,11 @@
                     android:layout_weight="1"
                     app:pure_icon="@mipmap/ic_sunriseandsunset_white"
                     app:pure_topLine="true"
-                    app:pure_leftTitle="日出"
+                    app:pure_leftTitle="@string/sunrise"
                     app:pure_leftTitleTextColor="@color/home_text_color_dark"
                     app:pure_leftValueTextColor="@color/home_text_color"
                     app:pure_lineColor="@color/home_divider_color"
-                    app:pure_rightTitle="日落"
+                    app:pure_rightTitle="@string/sunset"
                     app:pure_rightTitleTextColor="@color/home_text_color_dark"
                     app:pure_rightValueTextColor="@color/home_text_color" />
 

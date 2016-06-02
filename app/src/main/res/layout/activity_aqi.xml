@@ -64,11 +64,11 @@
                         android:layout_weight="1"
                         app:pure_icon="@mipmap/ic_pm"
                         app:pure_rightLine="true"
-                        app:pure_leftTitle="PM2.5"
+                        app:pure_leftTitle="@string/pm_2_5"
                         app:pure_leftTitleTextColor="@color/textColorPrimaryDark"
                         app:pure_leftValueTextColor="@color/textColorPrimary"
                         app:pure_lineColor="@color/textColorPrimaryDark"
-                        app:pure_rightTitle="PM10"
+                        app:pure_rightTitle="@string/pm_10"
                         app:pure_rightTitleTextColor="@color/textColorPrimaryDark"
                         app:pure_rightValueTextColor="@color/textColorPrimary" />
 
@@ -79,11 +79,11 @@
                         android:layout_height="match_parent"
                         android:layout_weight="1"
                         app:pure_icon="@mipmap/ic_aqi"
-                        app:pure_leftTitle="SO2"
+                        app:pure_leftTitle="@string/so2"
                         app:pure_leftTitleTextColor="@color/textColorPrimaryDark"
                         app:pure_leftValueTextColor="@color/textColorPrimary"
                         app:pure_lineColor="@color/textColorPrimaryDark"
-                        app:pure_rightTitle="NO2"
+                        app:pure_rightTitle="@string/no2"
                         app:pure_rightTitleTextColor="@color/textColorPrimaryDark"
                         app:pure_rightValueTextColor="@color/textColorPrimary" />
 

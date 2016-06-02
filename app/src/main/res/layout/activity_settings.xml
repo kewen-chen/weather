@@ -32,7 +32,7 @@
                 app:pure_bottomLine="true"
                 app:pure_icon="@mipmap/ic_settings_notification"
                 app:pure_lineColor="#77a9b7b7"
-                app:pure_title="通知"
+                app:pure_title="@string/notification"
                 app:pure_titleTextColor="@color/textColorPrimary" />
 
             <com.chenkewen.weather.view.CheckBoxItemView
@@ -41,9 +41,9 @@
                 android:layout_height="wrap_content"
                 android:background="?attr/selectableItemBackground"
                 android:clickable="true"
-                app:pure_off="已关闭"
-                app:pure_on="已开启"
-                app:pure_title="通知栏显示" />
+                app:pure_off="@string/closed"
+                app:pure_on="@string/opened"
+                app:pure_title="@string/notification_show" />
 
             <com.chenkewen.weather.view.SimpleSelectItemView
                 android:id="@+id/item_notificationColor"
@@ -51,7 +51,7 @@
                 android:layout_height="wrap_content"
                 android:background="?attr/selectableItemBackground"
                 android:clickable="true"
-                app:pure_title="通知栏底色" />
+                app:pure_title="@string/notification_background" />
 
             <com.chenkewen.weather.view.TipTitleView
                 android:layout_width="match_parent"
@@ -59,7 +59,7 @@
                 app:pure_bottomLine="true"
                 app:pure_icon="@mipmap/ic_settings_widget"
                 app:pure_lineColor="#77a9b7b7"
-                app:pure_title="部件"
+                app:pure_title="@string/component"
                 app:pure_titleTextColor="@color/textColorPrimary" />
 
             <com.chenkewen.weather.view.SimpleSelectItemView
@@ -68,7 +68,7 @@
                 android:layout_height="wrap_content"
                 android:background="?attr/selectableItemBackground"
                 android:clickable="true"
-                app:pure_title="桌面部件颜色" />
+                app:pure_title="@string/table_component_color" />
 
             <com.chenkewen.weather.view.TipTitleView
                 android:layout_width="match_parent"
@@ -76,7 +76,7 @@
                 app:pure_bottomLine="true"
                 app:pure_icon="@mipmap/ic_settings_houtai"
                 app:pure_lineColor="#77a9b7b7"
-                app:pure_title="后台"
+                app:pure_title="@string/backstage"
                 app:pure_titleTextColor="@color/textColorPrimary" />
 
             <com.chenkewen.weather.view.CheckBoxItemView
@@ -85,9 +85,9 @@
                 android:layout_height="wrap_content"
                 android:background="?attr/selectableItemBackground"
                 android:clickable="true"
-                app:pure_off="已关闭"
-                app:pure_on="已开启"
-                app:pure_title="后台自动更新" />
+                app:pure_off="@string/closed"
+                app:pure_on="@string/opened"
+                app:pure_title="@string/the_background_automatically_update" />
 
             <com.chenkewen.weather.view.SimpleSelectItemView
                 android:id="@+id/item_autoUpdateMode"
@@ -95,7 +95,7 @@
                 android:layout_height="wrap_content"
                 android:background="?attr/selectableItemBackground"
                 android:clickable="true"
-                app:pure_title="更新模式" />
+                app:pure_title="@string/update_model" />
 
             <com.chenkewen.weather.view.SimpleSelectItemView
                 android:id="@+id/item_autoUpdateInterval"
@@ -103,7 +103,7 @@
                 android:layout_height="wrap_content"
                 android:background="?attr/selectableItemBackground"
                 android:clickable="true"
-                app:pure_title="更新频率" />
+                app:pure_title="@string/update_frequency" />
 
             <com.chenkewen.weather.view.TipTitleView
                 android:layout_width="match_parent"
@@ -111,7 +111,7 @@
                 app:pure_bottomLine="true"
                 app:pure_icon="@mipmap/ic_settings_animation"
                 app:pure_lineColor="#77a9b7b7"
-                app:pure_title="动画"
+                app:pure_title="@string/animation"
                 app:pure_titleTextColor="@color/textColorPrimary" />
 
             <com.chenkewen.weather.view.CheckBoxItemView
@@ -120,9 +120,9 @@
                 android:layout_height="wrap_content"
                 android:background="?attr/selectableItemBackground"
                 android:clickable="true"
-                app:pure_off="已关闭"
-                app:pure_on="已开启"
-                app:pure_title="转场动画 (Android 5.0+)" />
+                app:pure_off="@string/closed"
+                app:pure_on="@string/opened"
+                app:pure_title="@string/animation_50" />
 
             <com.chenkewen.weather.view.TipTitleView
                 android:layout_width="match_parent"
@@ -130,7 +130,7 @@
                 app:pure_bottomLine="true"
                 app:pure_icon="@mipmap/ic_settings_others"
                 app:pure_lineColor="#77a9b7b7"
-                app:pure_title="其他"
+                app:pure_title="@string/rest"
                 app:pure_titleTextColor="@color/textColorPrimary" />
 
             <com.chenkewen.weather.view.SimpleSelectItemView
@@ -139,7 +139,7 @@
                 android:layout_height="wrap_content"
                 android:background="?attr/selectableItemBackground"
                 android:clickable="true"
-                app:pure_title="首页默认显示页" />
+                app:pure_title="@string/home_page_show" />
 
             <com.chenkewen.weather.view.TipTitleView
                 android:layout_width="match_parent"
@@ -147,7 +147,7 @@
                 app:pure_bottomLine="true"
                 app:pure_icon="@mipmap/ic_settings_about"
                 app:pure_lineColor="#77a9b7b7"
-                app:pure_title="关于"
+                app:pure_title="@string/about"
                 app:pure_titleTextColor="@color/textColorPrimary" />
 
             <RelativeLayout
@@ -162,7 +162,7 @@
                     android:layout_height="wrap_content"
                     android:layout_centerVertical="true"
                     android:layout_marginLeft="25dp"
-                    android:text="使用小贴士"
+                    android:text="@string/use_the_tips"
                     android:textColor="#000000"
                     android:textSize="17sp" />
 
@@ -196,7 +196,7 @@
                     android:layout_height="wrap_content"
                     android:layout_centerVertical="true"
                     android:layout_marginLeft="25dp"
-                    android:text="版本更新日志"
+                    android:text="@string/version_update_logcat"
                     android:textColor="#000000"
                     android:textSize="17sp" />
 
@@ -231,7 +231,7 @@
                     android:layout_height="wrap_content"
                     android:layout_centerVertical="true"
                     android:layout_marginLeft="25dp"
-                    android:text="关于 - 联系作者"
+                    android:text="@string/about_author"
                     android:textColor="#000000"
                     android:textSize="17sp" />
 

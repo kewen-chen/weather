@@ -48,7 +48,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="3dp"
-                android:text="暂无数据"
+                android:text="@string/temporarily_no_data"
                 android:textColor="#FFFFFF"
                 android:textSize="15sp" />
         </LinearLayout>
@@ -61,7 +61,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_centerInParent="true"
-        android:text="未添加城市"
+        android:text="@string/no_and_city"
         android:textColor="#FFFFFF"
         android:textSize="15sp"
         android:visibility="invisible" />

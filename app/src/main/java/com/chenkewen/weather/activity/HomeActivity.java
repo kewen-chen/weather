@@ -455,7 +455,7 @@ public class HomeActivity extends BaseToolbarActivity {
         // 实例化控件
         findViews();
         // 更换背景
-//       checkBg();
+      checkBg();
         sp = getSharedPreferences(getString(R.string.config), MODE_PRIVATE);
         dao = new WeatherDao(this);
         mTempIconList = new ArrayList<Integer>();
@@ -531,13 +531,13 @@ public class HomeActivity extends BaseToolbarActivity {
      * 显示版本更新说明Dialog
      */
     private void showVersionChangeLogDialog() {
-        boolean isRead = sp.getBoolean(getString(R.string.version_1_4_3_note_read), false);
+        boolean isRead = sp.getBoolean(getString(R.string.version_1_0_note_read), false);
         if (!isRead) {
             DialogUtils.showAlertDialog(HomeActivity.this, VersionUtils.getVersionName(HomeActivity.this) + " 版本更新日志:", getString(R.string.version_change_log), "已阅", "", "", new DialogUtils.DialogCallBack() {
                 @Override
                 public void onPositiveButton(DialogInterface dialog, int which) {
                     SharedPreferences.Editor editor = sp.edit();
-                    editor.putBoolean(getString(R.string.version_1_4_3_note_read), true);
+                    editor.putBoolean(getString(R.string.version_1_0_note_read), true);
                     editor.commit();
                     dialog.dismiss();
                     DialogUtils.showUseAssistantDialog(HomeActivity.this);
@@ -588,7 +588,7 @@ public class HomeActivity extends BaseToolbarActivity {
         //时间判断如果是白天，显示白天的背景，如果是晚上显示晚上的背景
         //根据天气来显示不同的天气背景
 
-        return R.layout.sunshine_background;
+        return R.layout.activity_home;
     }
 
 
